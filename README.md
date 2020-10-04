@@ -1,28 +1,49 @@
 # MyMacSetup
 
+## Summary
+- [**Laptop Registration**](#laptop-registration-with-sophos)
+- [**Chrome / Brave**](#chrome--brave)
+- [**Firefox**](#firefox)
+- [**Home Brew**](#home-brew)
+- [**Iterm**](#iterm)
+- [**Zsh**](#zsh)
+- [**Oh My Zsh**](#oh-my-zsh)
+- [**Powerlevel10k**](#powerlevel10k)
+- [**Zsh Auto Suggestion**](#zsh-auto-suggestion)
+- [**Zsh Syntax Highlighting**](#zsh-syntax-highlighting)
+- [**Vim**](#vim)
+- [**VS Code**](#vs-code)
+- [**Alacritty**](#alacritty)
+- [**fish**](#fish)
+- [**tmux**](#tmux)
+- [**ShiftIt**](#shiftit)
+- [**Github SSH Configuration**](#github-ssh-configuration)
+- [**Other Applications**](#other-applications)
+- [**Other Applications from Apple App Store**](#other-applications-from-apple-app-store)
+
+
+
 ## Laptop Registration with sophos
-- Click [here](https://api.mdm.thoughtworks.net/rolzog/downloadRegistrationPackage) to Register Thoughtworks laptop --
+- Click [here](https://api.mdm.thoughtworks.net/rolzog/downloadRegistrationPackage) to Register Thoughtworks laptop
 
 ## Chrome / Brave
 - Click [here](https://www.google.com/chrome/?brand=CHBD&gclsrc=ds&gclsrc=ds) to Install _**Chrome**_
 - Click [here](https://brave.com/download/) to Install _**Brave**_
 
-### Plugins   
+### Extensions   
 1. [OnePassword](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)
-2. [Grammraly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen)
-3. [Okta](https://chrome.google.com/webstore/detail/okta-browser-plugin/glnpjglilkicbckjpbgcfkogebgllemb)
-4. [Octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)
+2. [Okta](https://chrome.google.com/webstore/detail/okta-browser-plugin/glnpjglilkicbckjpbgcfkogebgllemb)
+3. [Octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)
 
 ***
 
 ## Firefox
 - Click [here](https://www.mozilla.org/en-US/firefox/new/) to Install _**Firefox**_
 
-### Plugins
+### Extensions
 1. [OnePassword](https://1password.com/browsers/firefox/)
-2. [Grammarly](https://addons.mozilla.org/en-US/firefox/addon/grammarly-1/)
-3. [Okta](https://addons.mozilla.org/en-US/firefox/addon/okta-browser-plugin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-4. [Oktotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+2. [Okta](https://addons.mozilla.org/en-US/firefox/addon/okta-browser-plugin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+3. [Oktotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
  
  ***
  
@@ -40,7 +61,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
  
 ***
  
- ## Zsh [(Reference)](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+ ## Zsh
   - Install _**zsh**_
   ```
   brew install zsh
@@ -52,17 +73,21 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   - Get .zshrc file [here](https://github.com/charliechaplinn/MyMacSetup/blob/main/.zshrc)
   - Add this file as ```~/.zshrc```
   
+   [(Reference)](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+  
 ***
   
- ## Oh My Zsh [(Reference)](https://github.com/ohmyzsh/ohmyzsh)
+ ## Oh My Zsh
   - Install _**ohmyzsh**_
   ```
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master tools/install.sh)"
   ```
   
+   [(Reference)](https://github.com/ohmyzsh/ohmyzsh)
+  
 ***
 
- ## Powerlevel10k [(Reference)](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+ ## Powerlevel10k
  - Install _**Powerlevel10k**_
     * Install _**Manually**_
     ```
@@ -86,10 +111,12 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
  p10k cofigure
  ```
  
+  [(Reference)](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+ 
  ***
  
- ## Zsh Autho Suggestion
- - Install _**zsh Autho suggestion**_ [(Reference)](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+ ## Zsh Auto Suggestion
+ - Install _**zsh Auto suggestion**_ [(Reference)](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
     * Install _**Mannually**_
     ```
     git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
@@ -111,7 +138,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
 
 ***
 
-## Zsh Syntax Highlighing
+## Zsh Syntax Highlighting
 - Install _**zsh syntax highlighting**_ [(Reference)](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
     * Install _**Mannually**_
     ```
