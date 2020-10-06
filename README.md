@@ -16,6 +16,7 @@
 - [**Alacritty**](#alacritty)
 - [**fish**](#fish)
 - [**tmux**](#tmux)
+- [**Redis**](#redis)
 - [**ShiftIt**](#shiftit)
 - [**Github SSH Configuration**](#github-ssh-configuration)
 - [**Other Applications**](#other-applications)
@@ -80,7 +81,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
  ## Oh My Zsh
   - Install _**ohmyzsh**_
   ```
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master tools/install.sh)"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ```
   
    [(Reference)](https://github.com/ohmyzsh/ohmyzsh)
@@ -212,6 +213,15 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   - Get tmux configuration file [here](https://github.com/charliechaplinn/MyMacSetup/blob/main/tmux.conf)
   - Add this file as ```~/.tmux.conf```
   
+***
+
+## Redis
+ - Click [here](https://redis.io/download)
+ - Download the stable version available.
+ - Unzip the downloaded file and move to home directory
+ - run ```make``` command
+ - add required aliases
+
 ***
 
 ## ShiftIt
