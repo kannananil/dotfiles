@@ -248,7 +248,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
 ***
 
 ## travis
- -Install _**travis**_
+ - Install _**travis**_
  ```
  brew install travis
  ```
@@ -331,6 +331,8 @@ ssh -T git@github.com
  - [knex](http://knexjs.org/)
  
  Install ```npm install -g <package name>``` 
+ 
+***
 
 ## Other Applications
 
@@ -343,6 +345,8 @@ ssh -T git@github.com
 - [**XMind**](https://www.xmind.net/download/)
 - [**VLC Player**](https://www.videolan.org/vlc/download-macosx.html)
 - [**Google Backup**](https://www.google.com/intl/en-GB_ALL/drive/download/backup-and-sync/)
+
+****
 
 ## Other Applications from Apple App Store
 
