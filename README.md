@@ -27,6 +27,8 @@
 - [**Other Applications**](#other-applications)
 - [**Other Applications from Apple App Store**](#other-applications-from-apple-app-store)
 
+***
+
 
 ## Chrome / Brave
 - Click [here](https://www.google.com/chrome/?brand=CHBD&gclsrc=ds&gclsrc=ds) to Install _**Chrome**_
