@@ -1,0 +1,62 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 1,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "prettier.singleQuote": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "all",
+  "prettier.jsxSingleQuote": true,
+  "cSpell.userWords": ["Abeliophyllum", "IMDT", "abcdefghi"],
+  "eslint.format.enable": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "git.enableSmartCommit": true,
+  "C_Cpp.updateChannel": "Insiders",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "mssql.format.datatypeCasing": "uppercase",
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": ""
+    }
+  ],
+  "mssql.format.keywordCasing": "uppercase",
+  "mssql.format.placeCommasBeforeNextStatement": true,
+  "mssql.format.alignColumnDefinitionsInColumns": true,
+  "editor.fontWeight": "100",
+  "mssql.resultsFontSize": 12,
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.languages.allowGuestCommandControl": true,
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "workbench.panel.defaultLocation": "right",
+  "markdown.preview.fontSize": 12,
+  "gitlens.gitCommands.closeOnFocusOut": true,
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.enableFiletypes": [
+    "sqlite"
+  ],
+  "editor.formatOnSave": true,
+  "notebook.kernelProviderAssociations": [
+  
+  ],
+  "workbench.colorTheme": "Dark (Molokai)"
+}
