@@ -17,8 +17,14 @@
 - [**fish**](#fish)
 - [**tmux**](#tmux)
 - [**Redis**](#redis)
+- [**Heroku**](#heroku)
+- [**Travis**](#travis)
+- [**bat**](#bat)
+- [**jq**](#jq)
+- [**tree**](#tree)
 - [**ShiftIt**](#shiftit)
 - [**Github SSH Configuration**](#github-ssh-configuration)
+- [**Commonly Used NPM Packages**](#commonly-used-npm-packages)
 - [**Other Applications**](#other-applications)
 - [**Other Applications from Apple App Store**](#other-applications-from-apple-app-store)
 
@@ -224,6 +230,60 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
 
 ***
 
+## Heroku
+ - Install _**heroku**_
+  * Install using _**Home Brew**_
+  ```
+  brew tap heroku/brew && brew install heroku
+  ````
+  * Install _**Manually**_
+  ```
+  curl https://cli-assets.heroku.com/install.sh | sh
+  ```
+  * Install using _**NPM**_
+  ```
+  npm install -g heroku
+  ```
+
+***
+
+## travis
+ -Install _**travis**_
+ ```
+ brew install travis
+ ```
+ Gighub [reference](https://github.com/travis-ci/travis.rb/#mac-os-x-via-homebrew)
+ 
+***
+
+## bat
+ - bat is similar to cat command but have syntax highlighting also.
+ - Install _**bat command**_ 
+ ```
+ brew install bat
+ ```
+ 
+ ***
+ 
+## jq
+ - _**jq**_ is a lightweight and flexible command-line JSON processor.
+ - Install _**jq**_
+ ```
+ brew install jq
+ ```
+ - Refer this [tutorial](https://stedolan.github.io/jq/tutorial/)
+ 
+ ***
+ 
+ ## tree
+  - _**tree**_ command used to display the directory structure
+  - Install _**tree**_
+  ```
+  brew install tree
+  ```
+ 
+ ***
+
 ## ShiftIt
   - Install _**ShiftIt**_ [(Reference)](https://github.com/fikovnik/ShiftIt)
   ```
@@ -263,6 +323,14 @@ ssh -T git@github.com
 - [Reference](https://www.freecodecamp.org/news/git-ssh-how-to/)
 
 ***
+
+## Commonly used npm packages
+ - [mocha](https://mochajs.org/)
+ - [nyc](https://github.com/istanbuljs/nyc)
+ - [nodemon](https://nodemon.io/)
+ - [knex](http://knexjs.org/)
+ 
+ Install ```npm install -g <package name>``` 
 
 ## Other Applications
 
