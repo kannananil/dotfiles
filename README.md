@@ -1,7 +1,6 @@
 # MyMacSetup
 
 ## Summary
-- [**Laptop Registration**](#laptop-registration-with-sophos)
 - [**Chrome / Brave**](#chrome--brave)
 - [**Firefox**](#firefox)
 - [**Home Brew**](#home-brew)
@@ -29,16 +28,12 @@
 - [**Other Applications from Apple App Store**](#other-applications-from-apple-app-store)
 
 
-
-## Laptop Registration with sophos
-- Click [here](https://api.mdm.thoughtworks.net/rolzog/downloadRegistrationPackage) to Register Thoughtworks laptop
-
 ## Chrome / Brave
 - Click [here](https://www.google.com/chrome/?brand=CHBD&gclsrc=ds&gclsrc=ds) to Install _**Chrome**_
 - Click [here](https://brave.com/download/) to Install _**Brave**_
 
 ### Extensions   
-1. [OnePassword](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)
+1. [1Password](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)
 2. [Okta](https://chrome.google.com/webstore/detail/okta-browser-plugin/glnpjglilkicbckjpbgcfkogebgllemb)
 3. [Octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)
 
@@ -48,7 +43,7 @@
 - Click [here](https://www.mozilla.org/en-US/firefox/new/) to Install _**Firefox**_
 
 ### Extensions
-1. [OnePassword](https://1password.com/browsers/firefox/)
+1. [1Password](https://1password.com/browsers/firefox/)
 2. [Okta](https://addons.mozilla.org/en-US/firefox/addon/okta-browser-plugin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 3. [Oktotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
  
