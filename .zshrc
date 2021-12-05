@@ -1,8 +1,15 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kannan/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,6 +105,39 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias subl='~/bin/subl'
+alias pycharm="open -a 'PyCharm CE'"
+alias ultimate="open -a 'IntelliJ IDEA'"
+alias intellij="open -a 'IntelliJ IDEA CE'"
+alias pgsql='pg_ctl -D /usr/local/var/postgres'
+alias covidtracker='sh ~/bin/covidtracker.sh'
+alias myip='curl https://ipecho.net/plain;echo'
+alias chgitconfig='sh ~/bin/changegitconfig.sh'
+alias jmeter='$HOME/Library/apache-jmeter/bin/jmeter.sh'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# added by travis gem
+[ ! -s $HOME/.travis/travis.sh ] || source $HOME/.travis/travis.sh
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# env variables for android sdk
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+export PATH=$PATH:$HOME/bin
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+export TALISMAN_HOME=$HOME/.talisman/bin
+
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '$HOME/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
