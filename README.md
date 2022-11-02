@@ -284,7 +284,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
 ## ShiftIt
   - Install _**ShiftIt**_ [(Reference)](https://github.com/fikovnik/ShiftIt)
   ```
-  brew cask install shiftit
+  brew install shiftit
   ```
 ***
 
