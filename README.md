@@ -23,6 +23,8 @@
 - [**tree**](#tree)
 - [**Auto Jump**](#autojump)
 - [**Pyenv**](#pyenv)
+- [**NVM**](#nvm)
+- [**Pipenv**](#pipenv)
 - [**ShiftIt**](#shiftit)
 - [**Github SSH Configuration**](#github-ssh-configuration)
 - [**Commonly Used NPM Packages**](#commonly-used-npm-packages)
@@ -339,6 +341,23 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   
   - `nvm install 14` to install nodejs 14.x.x latest version
   - `nvm global 14` to use nodejs 14.x.x version globally
+
+***
+
+
+ ## Pipenv
+  - pipenv helps to automatically creates and manages a virtualenv for your python projects.
+  - Install _**Pipenv**_ [(Reference)](https://pipenv.pypa.io/en/latest/#install-pipenv-today)
+  ```
+  pip3 install pipenv
+  ```
+
+  ### Example usage
+  
+  - `pipenv shell` to initiate a virtual env
+  - `pipenv install <packagename+version>` to install a dependency
+  - `pipenv install` to install all the dependencies menetioned in pipefile (except dev dependecies)
+  - `pipenv install --dev` to install all the dependencies menetioned in pipefile (including dev dependencies)
 
 ***
 
