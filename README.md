@@ -315,6 +315,21 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
 
 ***
 
+ ## NVM
+  - nvm allows you to quickly install and use different versions of node via the command line.
+  - Install _**NVM**_ [(Reference)](https://github.com/nvm-sh/nvm#installing-and-updating)
+  ```
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+  ```
+  then add the following lines into your .zshrc
+  ```
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+  ```
+
+***
+
 ## ShiftIt
   - Install _**ShiftIt**_ [(Reference)](https://github.com/fikovnik/ShiftIt)
   ```
