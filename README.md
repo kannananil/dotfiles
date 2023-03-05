@@ -339,6 +339,8 @@ ssh -T git@github.com
 
 - [**Slack**](https://slack.com/intl/en-in/downloads/mac)
 - [**PGAdmin**](https://www.pgadmin.org/download/pgadmin-4-macos/)
+- [**Pycharm**](https://www.jetbrains.com/pycharm/download/#section=mac)
+- [**Intellij**](https://www.jetbrains.com/idea/download/#section=mac)
 - [**Ferdium**](https://ferdium.org/download)
 - [**Obsidian**](https://obsidian.md/download)
 - [**1Password**](https://1password.com/downloads/mac/)
