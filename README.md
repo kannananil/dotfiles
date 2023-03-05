@@ -314,7 +314,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   ```
 
   ### Example usage
-  
+
   - `pyenv install 3.9` to install python 3.9 version
   - `pyenv global 3.9` to use python 3.9 version globally
   - `pyenv local 3.9` to use python 3.9 locally to that folder
@@ -334,6 +334,11 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
   ```
+
+  ### Example usage
+  
+  - `nvm install 14` to install nodejs 14.x.x latest version
+  - `nvm global 14` to use nodejs 14.x.x version globally
 
 ***
 
