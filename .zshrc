@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/Users/anilmuraleedharan/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -113,20 +113,40 @@ alias pgsql='pg_ctl -D /usr/local/var/postgres'
 alias covidtracker='sh ~/bin/covidtracker.sh'
 alias myip='curl https://ipecho.net/plain;echo'
 alias chgitconfig='sh ~/bin/changegitconfig.sh'
-alias jmeter='$HOME/Library/apache-jmeter/bin/jmeter.sh'
+alias jmeter='/Users/anilmuraleedharan/Library/apache-jmeter/bin/jmeter.sh'
+alias alacritty='open -a Alacritty'
+
+alias gap='git add -p';
+alias gsh='git stash';
+alias gshp='git stash -p -m'
+alias gshl='git stash list'
+alias gsha-'git stash apply'
+alias npmi='npm i --also=dev'
+
+alias tfinit='terraform init -input=false'
+alias tfplan='terraform plan -out tfapply -var-file=variables.tfvars'
+alias tfapply='terraform apply -auto-approve tfapply'
+
+function chmodx() { 
+  chmod +x $1 
+}
+
+export NEO_FOLDER="/Users/anilmuraleedharan/projects/goData/neo/"
+
+# my custom paths
+export PATH=$PATH:$HOME/bin:$HOME/bin/__goData:$HOME/bin/jsn
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # added by travis gem
-[ ! -s $HOME/.travis/travis.sh ] || source $HOME/.travis/travis.sh
+[ ! -s /Users/anilmuraleedharan/.travis/travis.sh ] || source /Users/anilmuraleedharan/.travis/travis.sh
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # env variables for android sdk
 export ANDROID_SDK=$HOME/Library/Android/sdk
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
-export PATH=$PATH:$HOME/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
@@ -136,8 +156,33 @@ export TALISMAN_HOME=$HOME/.talisman/bin
 
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/anilmuraleedharan/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/anilmuraleedharan/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/anilmuraleedharan/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/anilmuraleedharan/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/Desktop/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/Desktop/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '$HOME/Desktop/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/Desktop/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/sbin:$PATH"
