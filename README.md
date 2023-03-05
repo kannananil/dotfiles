@@ -21,6 +21,7 @@
 - [**bat**](#bat)
 - [**jq**](#jq)
 - [**tree**](#tree)
+- [**Auto Jump**](#autojump)
 - [**ShiftIt**](#shiftit)
 - [**Github SSH Configuration**](#github-ssh-configuration)
 - [**Commonly Used NPM Packages**](#commonly-used-npm-packages)
@@ -139,7 +140,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
     ```
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
-    then add this line in your .zshrc
+    then add the following to your .zshrc
     ```
     plugins=(zsh-autosuggestions)
     ```
@@ -159,7 +160,7 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
     ```
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     ```
-    then
+    then add the following to your .zshrc
     ```
     plugins=(zsh-syntax-highlighting)
     ```
@@ -284,6 +285,19 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   ```
  
  ***
+
+ ## Autojump
+  - A cd command that learns - easily navigate directories from the command line
+  - Install _**AutoJump**_ [(Reference)](https://github.com/wting/autojump)
+  ```
+  brew install autojump
+  ```
+  then add the following line into your .zshrc
+  ```
+  [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+  ```
+
+***
 
 ## ShiftIt
   - Install _**ShiftIt**_ [(Reference)](https://github.com/fikovnik/ShiftIt)
