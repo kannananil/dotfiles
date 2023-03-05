@@ -35,9 +35,13 @@
 - Click [here](https://brave.com/download/) to Install _**Brave**_
 
 ### Extensions   
-1. [1Password](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)
+1. [1Password Old](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk)
+1. [1Password New](https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa)
 2. [Okta](https://chrome.google.com/webstore/detail/okta-browser-plugin/glnpjglilkicbckjpbgcfkogebgllemb)
 3. [Octotree](https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc)
+4. [React Dev Tool](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+5. [Redux Dev Tool](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+6. [Daily.dev](https://chrome.google.com/webstore/detail/dailydev-the-homepage-dev/jlmpjdjjbgclbocgajdjefcidcncaied)
 
 ***
 
@@ -334,11 +338,16 @@ ssh -T git@github.com
 ## Other Applications
 
 - [**Slack**](https://slack.com/intl/en-in/downloads/mac)
+- [**PGAdmin**](https://www.pgadmin.org/download/pgadmin-4-macos/)
+- [**Ferdium**](https://ferdium.org/download)
+- [**Obsidian**](https://obsidian.md/download)
 - [**1Password**](https://1password.com/downloads/mac/)
 - [**Zoom**](https://zoom.us/download)
 - [**Evernote**](https://evernote.com/download)
 - [**Node.js**](https://nodejs.org/en/download/)
 - [**Postman**](https://www.postman.com/downloads/)
+- [**DBeaver**](https://dbeaver.io/download/)
+- [**Spotify**](https://www.spotify.com/us/download/mac/)
 - [**XMind**](https://www.xmind.net/download/)
 - [**VLC Player**](https://www.videolan.org/vlc/download-macosx.html)
 - [**Google Backup**](https://www.google.com/intl/en-GB_ALL/drive/download/backup-and-sync/)
@@ -348,5 +357,6 @@ ssh -T git@github.com
 ## Other Applications from Apple App Store
 
 - **Bandwidth+**
+- **Todolist**
 - **CopyClip**
 - **Imovie**
