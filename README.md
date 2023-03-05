@@ -313,6 +313,13 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   eval "$(pyenv init -)"
   ```
 
+  ### Example usage
+  
+  - `pyenv install 3.9` to install python 3.9 version
+  - `pyenv global 3.9` to use python 3.9 version globally
+  - `pyenv local 3.9` to use python 3.9 locally to that folder
+  - `pyenv shell 3.9` to use python 3.9 to that specific shell
+
 ***
 
  ## NVM
