@@ -22,6 +22,7 @@
 - [**jq**](#jq)
 - [**tree**](#tree)
 - [**Auto Jump**](#autojump)
+- [**Pyenv**](#pyenv)
 - [**ShiftIt**](#shiftit)
 - [**Github SSH Configuration**](#github-ssh-configuration)
 - [**Commonly Used NPM Packages**](#commonly-used-npm-packages)
@@ -295,6 +296,21 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   then add the following line into your .zshrc
   ```
   [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+  ```
+
+***
+
+ ## Pyenv
+  - Pyenv lets you easily switch between multiple versions of Python.
+  - Install _**Pyenv**_ [(Reference)](https://github.com/pyenv/pyenv#installation)
+  ```
+  brew install pyenv
+  ```
+  then add the following lines into your .zshrc
+  ```
+  export PYENV_ROOT="$HOME/.pyenv"
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
   ```
 
 ***
