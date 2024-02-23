@@ -26,6 +26,7 @@
 - [**NVM**](#nvm)
 - [**Pipenv**](#pipenv)
 - [**ShiftIt**](#shiftit)
+- [**Rectangle**](#rectangle)
 - [**Github SSH Configuration**](#github-ssh-configuration)
 - [**Commonly Used NPM Packages**](#commonly-used-npm-packages)
 - [**Other Applications**](#other-applications)
@@ -366,6 +367,11 @@ by running this scipt on the terminal ([Reference](https://brew.sh/))
   ```
   brew install shiftit
   ```
+***
+
+## Rectangle
+ - Click [here](https://rectangleapp.com/) to Install _**Rectangle**_
+
 ***
 
 ## Github SSH configuration
