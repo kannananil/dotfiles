@@ -1,0 +1,11 @@
+# ~/projects/myspace/.gitconfig.personal
+
+[user]
+email = 56071561+kannananil@users.noreply.github.com
+name = Kannan Anil
+
+[github]
+user = "kannananil"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/id_ed25519_personal"

@@ -1,0 +1,11 @@
+# ~/projects/workspace/.gitconfig.work
+
+[user]
+email = 79743246+anilmuraleedharan-tw@users.noreply.github.com
+name = Anil Muraleedharan
+
+[github]
+user = "anilmuraleedharan-tw"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/id_ed25519"

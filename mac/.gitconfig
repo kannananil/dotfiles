@@ -1,0 +1,13 @@
+# ~/.gitconfig
+
+[includeIf "gitdir:~/projects/myspace/"] # include for all .git projects under personnal/
+	path = ~/projects/myspace/.gitconfig.personal
+
+[includeIf "gitdir:~/projects/workspace/"]
+	path = ~/projects/workspace/.gitconfig.work
+
+[core]
+	excludesfile = ~/.gitignore      # valid everywhere
+	symlinks = false
+[init]
+	templatedir = /Users/kannananil/.git-template
