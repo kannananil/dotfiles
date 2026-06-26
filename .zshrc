@@ -1,188 +1,158 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# Enable Powerlevel10k instant prompt. Must stay at the top.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/anilmuraleedharan/.oh-my-zsh"
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+# ── Oh My Zsh ─────────────────────────────────────────────────────────────────
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
-
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# ── Editors ───────────────────────────────────────────────────────────────────
+export EDITOR='vim'
+export VISUAL='code'
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# ── History ───────────────────────────────────────────────────────────────────
+HISTSIZE=50000
+SAVEHIST=50000
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE   # prefix a command with space to keep it out of history
+setopt HIST_VERIFY
+setopt SHARE_HISTORY
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# ── Shell options ─────────────────────────────────────────────────────────────
+setopt AUTO_CD
+setopt NO_BEEP
+setopt CORRECT
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# ── PATH ──────────────────────────────────────────────────────────────────────
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:$HOME/bin:$HOME/bin/__goData:$HOME/bin/jsn"
+export ANDROID_SDK="$HOME/Library/Android/sdk"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+export TALISMAN_HOME="$HOME/.talisman/bin"
+export NEO_FOLDER="$HOME/projects/goData/neo/"
+export HOMEBREW_NO_AUTO_UPDATE=1
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# ── Key bindings ──────────────────────────────────────────────────────────────
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# ── Navigation ────────────────────────────────────────────────────────────────
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+# ── ls → eza ──────────────────────────────────────────────────────────────────
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -la --icons --git --group-directories-first'
+alias lt='eza --tree --level=2 --icons'
+alias ltt='eza --tree --level=3 --icons'
+
+# ── Modern CLI replacements ───────────────────────────────────────────────────
+alias cat='bat'
+alias grep='rg'
+alias find='fd'
+alias du='dust'
+alias df='duf'
+alias top='btop'
+
+# ── Git ───────────────────────────────────────────────────────────────────────
+alias gap='git add -p'
+alias gsh='git stash'
+alias gshp='git stash -p -m'
+alias gshl='git stash list'
+alias gsha='git stash apply'
+alias glog='git log --oneline --decorate --graph --all'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gri='git rebase -i'
+alias gcp='git cherry-pick'
+alias grs='git restore --staged'
+alias gundo='git reset --soft HEAD~1'
+
+# ── Apps ──────────────────────────────────────────────────────────────────────
 alias subl='~/bin/subl'
 alias pycharm="open -a 'PyCharm CE'"
 alias ultimate="open -a 'IntelliJ IDEA'"
 alias intellij="open -a 'IntelliJ IDEA CE'"
 alias pgsql='pg_ctl -D /usr/local/var/postgres'
 alias covidtracker='sh ~/bin/covidtracker.sh'
-alias myip='curl https://ipecho.net/plain;echo'
 alias chgitconfig='sh ~/bin/changegitconfig.sh'
-alias jmeter='/Users/anilmuraleedharan/Library/apache-jmeter/bin/jmeter.sh'
+alias jmeter="$HOME/Library/apache-jmeter/bin/jmeter.sh"
 alias alacritty='open -a Alacritty'
 
-alias gap='git add -p';
-alias gsh='git stash';
-alias gshp='git stash -p -m'
-alias gshl='git stash list'
-alias gsha-'git stash apply'
-alias npmi='npm i --also=dev'
-
+# ── Terraform ─────────────────────────────────────────────────────────────────
 alias tfinit='terraform init -input=false'
 alias tfplan='terraform plan -out tfapply -var-file=variables.tfvars'
 alias tfapply='terraform apply -auto-approve tfapply'
 
-function chmodx() { 
-  chmod +x $1 
+# ── Utilities ─────────────────────────────────────────────────────────────────
+alias npmi='npm i --also=dev'
+alias myip='curl -s https://ipecho.net/plain; echo'
+alias path='echo $PATH | tr ":" "\n"'
+alias reload='source ~/.zshrc'
+
+function chmodx() {
+  chmod +x $1
 }
 
-export NEO_FOLDER="/Users/anilmuraleedharan/projects/goData/neo/"
-
-# my custom paths
-export PATH=$PATH:$HOME/bin:$HOME/bin/__goData:$HOME/bin/jsn
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# added by travis gem
-[ ! -s /Users/anilmuraleedharan/.travis/travis.sh ] || source /Users/anilmuraleedharan/.travis/travis.sh
-
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
-# env variables for android sdk
-export ANDROID_SDK=$HOME/Library/Android/sdk
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-
-export TALISMAN_HOME=$HOME/.talisman/bin
-
-bindkey "^[^[[C" forward-word
-bindkey "^[^[[D" backward-word
-
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/anilmuraleedharan/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/anilmuraleedharan/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/anilmuraleedharan/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/anilmuraleedharan/opt/anaconda3/bin:$PATH"
-    fi
+# ── zoxide (replaces autojump) ────────────────────────────────────────────────
+if command -v zoxide &>/dev/null; then
+  eval "$(zoxide init zsh)"
+  alias cd='z'
 fi
-unset __conda_setup
-# <<< conda initialize <<<
 
+# ── fzf ───────────────────────────────────────────────────────────────────────
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview "bat --color=always {}"'
+export FZF_ALT_C_COMMAND='fd --type d --hidden --exclude .git'
+
+# ── Lazy-load NVM (~300-500ms startup savings) ────────────────────────────────
+export NVM_DIR="$HOME/.nvm"
+nvm() {
+  unfunction nvm node npm npx
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+  nvm "$@"
+}
+node() { nvm use default --silent; node "$@" }
+npm()  { nvm use default --silent; npm "$@" }
+npx()  { nvm use default --silent; npx "$@" }
+
+# ── Lazy-load Conda (~200ms startup savings) ──────────────────────────────────
+conda() {
+  unfunction conda
+  __conda_setup="$("$HOME/opt/anaconda3/bin/conda" 'shell.zsh' 'hook' 2>/dev/null)"
+  if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+  else
+    if [ -f "$HOME/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+      . "$HOME/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+      export PATH="$HOME/opt/anaconda3/bin:$PATH"
+    fi
+  fi
+  unset __conda_setup
+  conda "$@"
+}
+
+# ── Lazy-load gcloud (~100ms startup savings) ─────────────────────────────────
+gcloud() {
+  unfunction gcloud
+  [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"
+  [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ] && . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"
+  gcloud "$@"
+}
+
+# ── Completions ───────────────────────────────────────────────────────────────
 fpath+=${ZDOTDIR:-~}/.zsh_functions
-
-export HOMEBREW_NO_AUTO_UPDATE=1
-
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anilmuraleedharan/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/sbin:$PATH"
+# ── Powerlevel10k ─────────────────────────────────────────────────────────────
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

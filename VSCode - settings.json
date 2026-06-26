@@ -5,7 +5,7 @@
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "prettier.singleQuote": true,
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.renderWhitespace": "all",
   "prettier.jsxSingleQuote": true,
@@ -40,7 +40,9 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.shell.linux": "/bin/zsh",
   "workbench.panel.defaultLocation": "right",
-  "markdown.preview.fontSize": 12,
+  "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, sans-serif",
+  "markdown.preview.fontSize": 14,
+  "markdown.styles": ["./vscode-markdown.css"],
   "gitlens.gitCommands.closeOnFocusOut": true,
   "[json]": {
     "editor.quickSuggestions": {
@@ -58,5 +60,7 @@
   "notebook.kernelProviderAssociations": [
   
   ],
-  "workbench.colorTheme": "Dark (Molokai)"
+  "workbench.colorTheme": "Dark (Molokai)",
+  "claudeCode.preferredLocation": "panel",
+  "terminal.integrated.mouseWheelScrollSensitivity": 3
 }
