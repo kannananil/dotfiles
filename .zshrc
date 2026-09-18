@@ -32,7 +32,6 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/bin:$HOME/bin/__goData:$HOME/bin/jsn"
 export ANDROID_SDK="$HOME/Library/Android/sdk"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-export TALISMAN_HOME="$HOME/.talisman/bin"
 export NEO_FOLDER="$HOME/projects/goData/neo/"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -74,15 +73,11 @@ alias grs='git restore --staged'
 alias gundo='git reset --soft HEAD~1'
 
 # ── Apps ──────────────────────────────────────────────────────────────────────
-alias subl='~/bin/subl'
 alias pycharm="open -a 'PyCharm CE'"
 alias ultimate="open -a 'IntelliJ IDEA'"
 alias intellij="open -a 'IntelliJ IDEA CE'"
 alias pgsql='pg_ctl -D /usr/local/var/postgres'
-alias covidtracker='sh ~/bin/covidtracker.sh'
-alias chgitconfig='sh ~/bin/changegitconfig.sh'
 alias jmeter="$HOME/Library/apache-jmeter/bin/jmeter.sh"
-alias alacritty='open -a Alacritty'
 
 # ── Terraform ─────────────────────────────────────────────────────────────────
 alias tfinit='terraform init -input=false'
@@ -144,8 +139,8 @@ conda() {
 # ── Lazy-load gcloud (~100ms startup savings) ─────────────────────────────────
 gcloud() {
   unfunction gcloud
-  [ -f "$HOME/Downloads/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/Downloads/google-cloud-sdk/path.zsh.inc"
-  [ -f "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc" ] && . "$HOME/Downloads/google-cloud-sdk/completion.zsh.inc"
+  [ -f "$HOME/bin/google-cloud-sdk/path.zsh.inc" ] && . "$HOME/bin/google-cloud-sdk/path.zsh.inc"
+  [ -f "$HOME/bin/google-cloud-sdk/completion.zsh.inc" ] && . "$HOME/bin/google-cloud-sdk/completion.zsh.inc"
   gcloud "$@"
 }
 

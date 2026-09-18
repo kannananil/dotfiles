@@ -26,8 +26,8 @@
       "server": "{{put-server-name-here}}",
       "database": "{{put-database-name-here}}",
       "user": "{{put-username-here}}",
-      "password": ""
-    }
+      "password": "",
+    },
   ],
   "mssql.format.keywordCasing": "uppercase",
   "mssql.format.placeCommasBeforeNextStatement": true,
@@ -37,7 +37,10 @@
   "liveshare.allowGuestTaskControl": true,
   "liveshare.allowGuestDebugControl": true,
   "liveshare.languages.allowGuestCommandControl": true,
-  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.profiles.osx": {
+    "zsh": { "path": "/bin/zsh" },
+  },
   "terminal.integrated.shell.linux": "/bin/zsh",
   "workbench.panel.defaultLocation": "right",
   "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, sans-serif",
@@ -46,21 +49,18 @@
   "gitlens.gitCommands.closeOnFocusOut": true,
   "[json]": {
     "editor.quickSuggestions": {
-      "strings": true
+      "strings": true,
     },
-    "editor.suggest.insertMode": "replace"
+    "editor.suggest.insertMode": "replace",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "cSpell.enableFiletypes": [
-    "sqlite"
-  ],
+  "cSpell.enableFiletypes": ["sqlite"],
   "editor.formatOnSave": true,
-  "notebook.kernelProviderAssociations": [
-  
-  ],
-  "workbench.colorTheme": "Dark (Molokai)",
+  "notebook.kernelProviderAssociations": [],
+  "workbench.colorTheme": "Atom One Darker",
   "claudeCode.preferredLocation": "panel",
-  "terminal.integrated.mouseWheelScrollSensitivity": 3
+  "terminal.integrated.mouseWheelScrollSensitivity": 3,
+  "claudeCode.hideOnboarding": true,
 }

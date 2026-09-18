@@ -36,6 +36,7 @@ echo ""
 
 link ".zshrc"            ".zshrc"
 link ".vimrc"            ".vimrc"
+link "kitty.conf"        ".config/kitty/kitty.conf"
 link "VSCode - settings.json"  "Library/Application Support/Code/User/settings.json"
 link "vscode-markdown.css"    "Library/Application Support/Code/User/vscode-markdown.css"
 

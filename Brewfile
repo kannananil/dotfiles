@@ -31,7 +31,7 @@ brew "lazygit"
 brew "jq"
 brew "nvm"
 brew "pyenv"
-brew "pipenv"
+brew "pipenv"          # consider: mise replaces nvm + pyenv + pipenv with one tool, no startup shell hooks
 brew "go"
 brew "ruby"
 brew "scala"
@@ -59,7 +59,7 @@ brew "tree"
 
 # ── Casks ─────────────────────────────────────────────────────────────────────
 cask "android-platform-tools"
-cask "shiftit"
+cask "rectangle"    # replaces shiftit (unmaintained upstream)
 
 # ── Manual installs (excluded from bundle — CDN unreliable or requires special steps) ──
 # dbeaver-community  →  download from https://dbeaver.io/download/
